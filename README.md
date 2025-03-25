@@ -15,6 +15,17 @@ Feel free to clone this repository into your server enviornment to add some much
 
 In order to use these scripts, you'll just have to clone the repository. Make sure you have **git**, **screen**, and **java** installed.
 
+We also need ufw to configure ports inbounds and outbounds in order for players to connect
+
+> [!Caution]
+> 
+> You should know what you're doing when opening/closing ports  
+> Misconfiguration, or in general open ports can or may be utilized to gather unauthorized access
+>
+> When managing firewalls, such as *UFW*, you should be certain about your configurations and actions
+>
+> Proceed with Caution
+
 ## Setup your debian environment
 
 1. Install **GIT**
@@ -42,7 +53,30 @@ sudo apt-get install openjdk-17-jre-headless
 
 ```
 
-Now that we have installed the requirements, clone the repository as shown below to retrieve scripts and files.  
+4. Install *UFW*
+
+```Shell
+
+sudo apt install ufw
+
+```
+
+Now that we have installed the requirements, we want to make a folder that will contain our minecraft server files
+
+```Shell
+
+cd /
+
+```
+
+```Shell
+
+mkdir minecraft & cd minecraft
+
+```
+
+
+ clone the repository as shown below to retrieve scripts and files.  
 
 ```Shell
 
